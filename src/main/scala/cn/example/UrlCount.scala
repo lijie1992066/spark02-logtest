@@ -10,7 +10,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 object UrlCount {
 
   def main(args: Array[String]) {
-    val conf = new SparkConf().setAppName("UrlCount").setMaster("local[2]")
+    val conf = new SparkConf().setAppName("UrlCount ").setMaster("local[2]")
     val sc = new SparkContext(conf)
 
     //rdd1将数据切分，元组中放的是（URL， 1）
